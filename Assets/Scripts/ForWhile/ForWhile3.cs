@@ -5,34 +5,36 @@ using UnityEngine.UI;
 
 public class ForWhile3 : MonoBehaviour
 {
-    public Text text1;
-    public Text text2;
+    public Text numeroDerecha;
+    public Text numeroIzquierda;
  
 
     // Start is called before the first frame update
     public void button1()
     {
-       int num1 = int.Parse(text1.text);
-       int num2 = int.Parse(text2.text);
+       int derecha = int.Parse(numeroDerecha.text);
+       int izquierda = int.Parse(numeroIzquierda.text);
 
-        if (num1 == num2)
+       if (derecha == izquierda)
         {
             Debug.Log("los numeros son iguales");
         }
-        else if (num1 > num2)
+       else if (derecha > izquierda)
         {
-            while (num1 > num2)
+            izquierda++;
+            while(derecha > izquierda)
             {
-                num2++;
-                Debug.Log(num2);
+                Debug.Log(izquierda);
+                izquierda++;
             }
         }
-        else
+       else
         {
-            while (num1 < num2)
+            izquierda--;
+            while(izquierda > derecha)
             {
-                num2--;
-                Debug.Log(num2);
+                Debug.Log(izquierda);
+                izquierda--;
             }
         }
 

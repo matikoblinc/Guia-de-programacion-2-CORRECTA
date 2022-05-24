@@ -7,6 +7,8 @@ public class Inputs4 : MonoBehaviour
     public GameObject cube;
     public float velocidadMov;
     public float Rotacion1;
+    Vector3 rotacionDerecha;
+    Vector3 rotacionIzquierda;
 
     // Update is called once per frame
     void Update()
